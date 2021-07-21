@@ -16,7 +16,7 @@ export const LandingPage = () => {
            </div>
             
             <div className="landingPageImage">
-                <img src = '../../../public/assets/image.png' alt=""></img>         
+                <img src="./image.png" alt="" />         
            </div>
         </div>
 
