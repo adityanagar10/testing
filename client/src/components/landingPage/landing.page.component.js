@@ -1,6 +1,7 @@
 import React from 'react'
 import './landing.page.scss'
 import { Button } from '../button/button.component'
+import Vector from './image.png'
 
 export const LandingPage = () => {
     return(
@@ -8,7 +9,7 @@ export const LandingPage = () => {
             <div className="wrapper">
            
            <div className="landingPageTitle">
-           <h1 style={{color: "white"}}>Welcome to 🧱📃</h1>
+           <h1 className="landingPageHeading">Welcome to 🧱📃</h1>
            <p className="content">
            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
            </p>
@@ -16,7 +17,7 @@ export const LandingPage = () => {
            </div>
             
             <div className="landingPageImage">
-                <img src="./image.png" alt="" />         
+                <img src={Vector} alt="" />         
            </div>
         </div>
 
