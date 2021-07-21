@@ -1,6 +1,19 @@
+  
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 
 *{
     font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+    scrollbar-width: none;
+
+    .App{
+        height: 120vh;
+
+        .sections{
+            width: 100;
+            height: calc(120vh - 100px);
+            background-color: black;
+        }
+    }
 }

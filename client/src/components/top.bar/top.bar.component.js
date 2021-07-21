@@ -1,10 +1,18 @@
 import React from 'react';
 import './top.bar.styles.scss';
-import {AppstoreOutlined} from '@ant-design/icons';
+
 import {Button} from 'antd';
+import {useState} from 'react';
 
 
 export const TopBar = () => {
+
+    const [loading, setLoading] = useState(false);
+
+    const handleClick =() => {
+        console.log("I was clicked");
+        setLoading(!loading);
+    }
     return(
         
             <div className="topbarContainer">
@@ -15,20 +23,23 @@ export const TopBar = () => {
                
                <div className="itemContainer">
                
-               <AppstoreOutlined
-                    className="logo-edit"
-                    style={{fontSize: '30px'}}
-                />
+               <h1 style={{color: "white"}}>WallPaper</h1>
                </div>
            </div>
             
             <div className="right">
                 <div className="arrange">
-               <button
-                type="primary" 
-                shape="round"
-                className="btn-edit"
-               > Login With Discord </button>
+               <Button
+               style={{backgroundColor: "#8b63ff",color: 'white', borderRadius: "12px",border: 'none'}}
+                size="large"
+                
+                
+                className="btn-edit btn-lg"
+                loading={loading}
+                
+                onClick={handleClick}
+
+               > { loading ? null : "LOGIN WITH DISCORD"} </Button>
                </div>
             </div>
            
