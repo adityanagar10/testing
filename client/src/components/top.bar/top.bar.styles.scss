@@ -1,23 +1,23 @@
-.topBarContainer{
-    display: flex;
+.topbarContainer{
+    
     background-color: blue;
     width: 100%;
-    padding: 0% 3%;
-    color: #fff;
+    height: 100px;
+    color: white;
     position: fixed;
-    z-index: 3;
     top: 0;
+    z-index: 3;
 
-    .topBarLogo{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+   .wrapper{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
 
-    .topBarItems{
-                
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        }
+       .itemContainer{
+           display: flex;
+           flex-direction: column;
+           margin-left: 20px;
+
+       }
+   }
 }
