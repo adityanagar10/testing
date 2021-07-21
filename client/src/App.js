@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { TopBar } from "./components/top.bar/top.bar.component"
 
 function App() {

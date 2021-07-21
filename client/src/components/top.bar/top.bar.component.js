@@ -1,6 +1,7 @@
 import React from 'react';
 import './top.bar.styles.scss';
 import {AppstoreOutlined} from '@ant-design/icons';
+import {Button} from 'antd';
 
 
 export const TopBar = () => {
@@ -14,17 +15,20 @@ export const TopBar = () => {
                
                <div className="itemContainer">
                
-               <sapn><AppstoreOutlined
+               <AppstoreOutlined
+                    className="logo-edit"
                     style={{fontSize: '30px'}}
-                /></sapn>
+                />
                </div>
            </div>
             
             <div className="right">
                 <div className="arrange">
-               <h1>
-                   Log In with Discord
-               </h1>
+               <button
+                type="primary" 
+                shape="round"
+                className="btn-edit"
+               > Login With Discord </button>
                </div>
             </div>
            
