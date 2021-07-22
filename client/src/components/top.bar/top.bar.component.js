@@ -1,6 +1,6 @@
 import React from 'react';
 import './top.bar.styles.scss';
-
+import Vector from './discordLogo.png';
 import {Button} from 'antd';
 import {useState} from 'react';
 
@@ -39,7 +39,7 @@ export const TopBar = () => {
                 
                 onClick={handleClick}
 
-               > { loading ? null : "LOGIN WITH DISCORD"} </Button>
+               > { loading ? null :<span><span className="me-2"><img src={Vector} alt=""></img></span>  <span> LOGIN WITH DISCORD</span></span>} </Button>
                </div>
             </div>
            
